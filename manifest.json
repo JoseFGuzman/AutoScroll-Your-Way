@@ -3,6 +3,13 @@
   "name": "AutoScroll Your Way",
   "version": "1.0",
   "description": "Ofrece un scroll automático personalizable para facilitar la lectura de contenido ligero. Ajusta la velocidad de lectura a tu ritmo y disfruta de una experiencia de lectura fluida y cómoda.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "icons": {
     "128": "assets/icon.png"
   },
